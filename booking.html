@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Service - Ikman Sevai</title>
+  <link rel="stylesheet" href="ikmain.css">
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .booking-container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #c07830;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #c07830;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="booking-container">
+    <h2>Book a Service</h2>
+    <form action="/book" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="service" placeholder="Service Type (e.g., plumber)" required>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>
