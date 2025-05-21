@@ -1,4 +1,3 @@
-<!-- public/service-register.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +6,14 @@
 <body>
   <h2>Register as a Service Provider</h2>
   <form action="/service-register" method="POST">
-    <input type="text" name="username" placeholder="Your Name" required><br><br>
+    <input type="text" name="username" placeholder="Name" required><br><br>
     <input type="password" name="password" placeholder="Password" required><br><br>
-    <input type="text" name="service" placeholder="e.g., Plumber, Baker" required><br><br>
-    <input type="text" name="experience" placeholder="Years of Experience"><br><br>
-    <input type="text" name="availability" placeholder="e.g., Mon–Fri, 9am–5pm"><br><br>
-    <button type="submit">Register</button>
+    <input type="text" name="service" placeholder="Your Service (e.g., Baker)" required><br><br>
+    <input type="text" name="experience" placeholder="Experience (e.g., 3 years)" required><br><br>
+    <input type="text" name="location" placeholder="City or Area" required><br><br>
+    <input type="text" name="availability" placeholder="Available Days & Times (e.g., Mon–Fri, 9am–5pm)" required><br><br>
+    <input type="text" name="price" placeholder="Starting Price (e.g., Rs.1500)" required><br><br>
+    <button type="submit">Create My Profile</button>
   </form>
 </body>
 </html>
