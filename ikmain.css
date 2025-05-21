@@ -79,6 +79,17 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 10px;
 }
+.filter-bar {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.filter-bar select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 
 /* Booking form */
 #booking form {
@@ -121,4 +132,65 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+/* -----------------------------------
+   📱 Responsive Styles for Mobile
+----------------------------------- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #hero {
+    height: 250px;
+    padding: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  #booking form {
+    width: 90%;
+    margin: auto;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }

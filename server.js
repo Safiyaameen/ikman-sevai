@@ -81,3 +81,13 @@ app.get('/login', (req, res) => {
 app.get('/register', (req, res) => {
   res.sendFile(__dirname + '/register.html');
 });
+// SEARCH FUNCTION
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", () => {
+  const term = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(term) ? "block" : "none";
+  });
+});
